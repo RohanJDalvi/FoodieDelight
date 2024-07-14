@@ -1,0 +1,42 @@
+<div class="main-container">
+  <div class="form-container">
+    <h2>Restaurant Details</h2>
+    <form #restaurantForm="ngForm" (ngSubmit)="onSubmit(restaurantForm)">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" [(ngModel)]="restaurant.name" required />
+        <div *ngIf="restaurantForm.submitted && restaurantForm.controls['name'].invalid" class="error-message">
+          Name is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" name="description" [(ngModel)]="restaurant.description" required></textarea>
+        <div *ngIf="restaurantForm.submitted && restaurantForm.controls['description'].invalid" class="error-message">
+          Description is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location" [(ngModel)]="restaurant.location" required />
+        <div *ngIf="restaurantForm.submitted && restaurantForm.controls['location'].invalid" class="error-message">
+          Location is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="category">Category</label>
+        <select id="category" name="category" [(ngModel)]="restaurant.category" required>
+          <option value="" disabled>Select a category</option>
+          <option value="Continental">Continental</option>
+          <option value="Chinese">Chinese</option>
+          <option value="Maharashtrian">Maharashtrian</option>
+          <option value="Thai">Thai</option>
+        </select>
+        <div *ngIf="restaurantForm.submitted && restaurantForm.controls['category'].invalid" class="error-message">
+          Category is required.
+        </div>
+      </div>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+</div>

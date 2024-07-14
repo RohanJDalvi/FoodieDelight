@@ -1,0 +1,63 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('/assets/Food-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .login-box {
+    background: whitesmoke;
+    position: absolute;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px; 
+    height: 400px;
+    min-height: 300px; 
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .login-box h1 {
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    color: black;
+  }
+  
+  .input-group {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 0.75rem;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: orange;
+  }
+  

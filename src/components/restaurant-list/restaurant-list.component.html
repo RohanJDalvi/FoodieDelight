@@ -1,0 +1,16 @@
+<div class="restaurant-list-container">
+    <h1><strong>ALL RESTAURANTS</strong></h1>
+    <div class="card-container">
+      <div class="card" *ngFor="let restaurant of restaurants">
+        <h2>{{ restaurant.name }}</h2>
+        <h3>{{ restaurant.description }}</h3>
+        <p><strong>Location:</strong> {{ restaurant.location }}</p>
+        <p><strong>Category:</strong> {{ restaurant.category }}</p>
+        <div class="button-container">
+          <button class="btn btn-edit" (click)="editRestaurant(restaurant.id)">Edit</button>
+          <button class="btn btn-delete" (click)="deleteRestaurant(restaurant.id)">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

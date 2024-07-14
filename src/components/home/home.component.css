@@ -1,0 +1,63 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('/assets/Food-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+  
+    .intro {
+      color: whitesmoke;
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+  
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+  
+      .card {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 300px;
+  
+        h2 {
+          color: black;
+          font-size: 2rem;
+          margin-bottom: 0.5rem;
+        }
+  
+        p {
+          margin-bottom: 1rem;
+        }
+  
+        .btn {
+          background: black;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          padding: 0.75rem 1.5rem;
+          cursor: pointer;
+          transition: background 0.3s;
+  
+          &:hover {
+            background: #e5533d;
+          }
+        }
+      }
+    }
+  }
+  
